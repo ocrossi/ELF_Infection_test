@@ -19,7 +19,7 @@ _start:
 
 	
 	jmp	payload
-	message:	db	"this is the payload speaking", 0xa
+	message:	db	"hello world from payload", 0xa
 
 
 payload: ;parasite function
@@ -31,7 +31,7 @@ payload: ;parasite function
 	lea rsi, [rel message]			
 								
 	xor rdx, rdx
-	mov dl, 0x39				
+	mov dl, 0x19				
 	syscall					
 
 
