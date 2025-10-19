@@ -1,0 +1,7 @@
+# Build artifacts
+infect
+payload.bin
+
+# Test files
+test_target
+test_target.c
